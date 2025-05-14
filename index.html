@@ -42,8 +42,9 @@
             background-image: url('IMG_2252.jpg');
             background-size: cover;
             background-position: center;
-            min-height: 555px;
-            padding: 100px 50px 50px;
+            background-color: #98BE8E;
+            min-height: 300px;
+            padding: 50px 50px;
             color: black;
             text-shadow: 1px 1px 9px white;
         }
@@ -72,22 +73,24 @@
             font-size: 20px;
         }
 
-        .section.brown {
-            background-color: #dbc1ae;
-            color:black;
+        .section.pink {
+            background-color: #0C8346;
+            color:white;
+            font-size: 20px;
         }
 
-        .section.dark {
-            background-color: #aaa1ba;
-            color:black;
+        .section.green {
+            background-color: #8FD5A6;
+            color:white;
+            font-size: 20px;
         }
 
         .footer {
-            background-color: black;
+            background-color: #0D5D56;
             color: white;
             text-align: center;
             padding: 20px 0;
-            font-size: 20px;
+            font-size: 15px;
         }
 
         #cookie-popup {
@@ -176,9 +179,18 @@
       color: #eee;
     }
 
-    .nav-item:hover .dropdown {
+    /* .nav-item:hover .dropdown {
       display: block;
-    }
+    } */
+
+    .nav-item .dropdown {
+  display: none;
+}
+
+.nav-item.open .dropdown {
+  display: block;
+}
+
 
     </style>
 </head>
@@ -186,10 +198,10 @@
 <body>
 
     <div class="header">
-        <div class="logo">UnloadiBot - Robotic Cabinet Dishwasher Unloader</div>
+        <div class="logo">LiftBot.</div>
         <div class="nav-menu">
         <!-- <div class="nav-item">About</div> -->
-            <div class="nav-item">Menu 
+            <div class="nav-item" onclick="this.classList.toggle('open')">Menu 
                 <div class="dropdown" style="float: right;">
                     <p>Email: triathlonfrog752@gmail.com</p>
                     <p>Web: www.peterking.info</p>
@@ -201,11 +213,8 @@
 
     <main>
        
-        <section class="hero" style="background-image: url(https://snowbrdking26.github.io/RoboticCabinetDishwasherUnloader-/DishwasherUnloadingRobot2021.png); height: 800px; background-repeat: no-repeat; background-size: cover; background-position: top;" ;>
-            <!-- <h1 >Cabinet Dishwasher Unloading Robot</h1> -->
-            <div >
-
-            </div>
+        <section class="hero" style="background-image: url(https://snowbrdking26.github.io/RoboticCabinetDishwasherUnloader-/DishwasherUnloadingRobot2021.png); background-repeat: no-repeat; background-size: 50%; background-position: top; " >
+         
         </section>
 
         <!-- <div id="showLinkFullVideoID" class="modal" style="text-align: center;">
@@ -227,12 +236,12 @@
             <textarea placeholder="Phone"></textarea>
         </div> -->
 
-        <section class="section brown" >
-        UnloadiBot a Robotic Cabinet Dishwasher Unloader  <br>Unloads the Dishwasher <br>Stacks Clean dishes in cabinet<br>
+        <section class="section pink">
+        LiftBot: Lifts and stacks dishes. <br><br>
            
         </section>
 
-        <section class="section dark">
+        <section class="section green">
             Saves time<br>
             Increases Efficiency<br>
             Enhances Productivity
@@ -248,7 +257,7 @@
         <button onclick="acceptCookies()">Accept Cookies</button>
     </div>
 
-    <footer class="footer" style="width: 100%; font-weight: 500; padding-bottom: 10px; z-index: 2; font-size: 20px;">
+    <footer class="footer" style="width: 100%; font-weight: 500; padding-bottom: 10px; z-index: 2;">
         <br>
         <!-- <a style="text-decoration: none; color: white;"
             href="https://RoboticCabinetDishwasherUnloader.github.io/RoboticCabinetDishwasherUnloader/WreathLatch.html" target="_blank">Also explore
@@ -256,11 +265,12 @@
         <br><br><br>
 
 
-        <div>UnloadiBot</div>
+        <div>LiftBot <br> Lifts and unloads dishes.</div>
         <!-- <div>www.RoboticCabinetDishwasherUnloader.com</div> -->
         www.peterking.info
         <!-- <div>RoboticCabinetDishwasherUnloader@gmail.com</div> -->
-        <div>&copy; 2021 Robotic Cabinet Dishwasher Unloader – All Rights Reserved.</div>
+        <div>&copy; 2021 LiftBot 
+– All Rights Reserved.</div>
         <br><br><br><br>
     </footer>
 
