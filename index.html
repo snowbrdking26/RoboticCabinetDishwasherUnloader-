@@ -185,6 +185,158 @@
   display: block;
 }
 
+/* Reset some default styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7f9;
+    color: #333;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Container for the benefits */
+.benefits-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 800px;
+}
+
+/* Title styling */
+.benefits-title {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #4CAF50;
+}
+
+/* List of benefits */
+.benefits-list {
+    display: block;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Individual benefit item */
+.benefit-item {
+    display: block;
+    align-items: center;
+    gap: 15px;
+    border-left: 4px solid #4CAF50;
+    padding-left: 15px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.benefit-item:hover {
+    transform: scale(1.05);
+}
+
+/* Icon styling */
+.icon {
+    font-size: 2.5em;
+    color: #4CAF50;
+}
+
+/* Headline styling for each benefit */
+.benefit-item h3 {
+    font-size: 1.4em;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Description for each benefit */
+.benefit-item p {
+    font-size: 1em;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    .benefits-title {
+        font-size: 1.6em;
+    }
+
+    .benefit-item {
+        /* flex-direction: column; */
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .icon {
+        font-size: 2em;
+    }
+
+    .benefit-item h3 {
+        font-size: 1.2em;
+    }
+
+    .benefit-item p {
+        font-size: 0.9em;
+    }
+}
+
+/* ---------new------ */
+body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 2rem;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 2rem;
+      color: #444;
+    }
+
+    /* Benefits Flex Layout */
+    .benefits {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      gap: 1.5rem;
+    }
+
+    /* Benefit Card Styles */
+    .benefit {
+      flex: 1 1 250px;
+      background-color: #fff;
+      border-radius: 8px;
+      padding: 1.5rem;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .benefit h3 {
+      margin: 0;
+      color: #007BFF;
+      font-size: 1.25rem;
+    }
+
+    .benefit:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+    }
 
     </style>
 </head>
@@ -212,12 +364,26 @@
         </section>
 
 
-        <section class="section green">
-        Lifts, unloads dishes and more.<br>
-        Stacks items <br>
-        Increases Efficiency<br>
-        Enhances Productivity
-        </section>
+        <div class="container">
+            <!-- <h1> Benefits</h1> -->
+            <div class="benefits">
+                <div class="benefit">
+                    <h3>Lifts, unloads dishes and more.</h3>
+                </div>
+                <div class="benefit">
+                    <h3>Stacks items</h3>
+                </div>
+                <div class="benefit">
+                    <h3>Increases Efficiency</h3>
+                </div>
+                <div class="benefit">
+                    <h3>Enhances Productivity</h3>
+                </div>
+            </div>
+        </div>
+
+      
+      
     </main>
 
     <div id="cookie-popup">
